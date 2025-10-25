@@ -1,4 +1,4 @@
-Név: Sebők Máté Milán
+Név: Sebők Máté Milán  
 Neptun kód: DO21OO
 
 Feladat leírása:
