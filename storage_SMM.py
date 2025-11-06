@@ -3,13 +3,13 @@ from datetime import datetime
 
 RESULTS_FILE = "results.txt"
 
-def save_result(day, score):
+def save_result_SMM(day, score):
     with open(RESULTS_FILE, "a", encoding="utf-8") as f:
         now = datetime.now().strftime("%Y-%m-%d %H:%M")
         f.write(f"{now} | Nap: {day} | Pont: {round(score)}\n")
 
 
-def load_best_result():
+def load_best_result_SMM():
     if not os.path.exists(RESULTS_FILE):
         return None
 
