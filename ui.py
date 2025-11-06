@@ -213,7 +213,7 @@ class App:
         self.advance_time_SMM(1)
         self.status_label.config(text="Etettél (1 óra telt el).")
         self.update_bars()
-        self.check_game_over_SMM()
+        self.check_game_over()
 
 
     def play(self):
@@ -229,7 +229,7 @@ class App:
         else:
             self.status_label.config(text="Játszottál (2 óra telt el).", fg="black")
         self.update_bars()
-        self.check_game_over_SMM()
+        self.check_game_over()
 
 
     def sleep(self):
@@ -237,10 +237,10 @@ class App:
         self.advance_time_SMM(4)
         self.status_label.config(text="Aludt (4 óra telt el).")
         self.update_bars()
-        self.check_game_over_SMM()
+        self.check_game_over()
 
 
-    def check_game_over_SMM(self):
+    def check_game_over(self):
         if self.pet.hunger <= 0 or self.pet.energy <= 0 or self.pet.happiness <= 0:
             if not self.warning_active:
                 self.warning_active = True
