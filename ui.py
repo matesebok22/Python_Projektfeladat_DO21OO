@@ -1,6 +1,6 @@
 import tkinter as tk
 from pet_SMM import PetSMM
-from storage_SMM import save_result, load_best_result
+from storage_SMM import save_result_SMM, load_best_result_SMM
 
 class App:
     def __init__(self, root):
@@ -253,7 +253,7 @@ class App:
 
     def end_game(self):
         final_score = round(self.score)
-        save_result(self.day, final_score)
+        save_result_SMM(self.day, final_score)
 
         for widget in self.root.winfo_children():
             widget.destroy()
@@ -264,7 +264,7 @@ class App:
         tk.Label(end_frame, text="Játék vége", font=("Arial", 24, "bold"), fg="red", bg=self.bg_color).pack(pady=20)
         tk.Label(end_frame, text=f"{self.pet.name} {self.day}. napig élt.\nÖsszpontszám: {final_score}", font=("Arial", 14), bg=self.bg_color).pack(pady=10)
 
-        best = load_best_result()
+        best = load_best_result_SMM()
         if best:
             tk.Label(end_frame, text=f"Eddigi legjobb: {best}", font=("Arial", 10, "bold"), fg="darkgreen", bg=self.bg_color).pack(pady=5)
 
