@@ -12,5 +12,4 @@ A feladat témája egy virtuális állat gondozása. Az állatnak ki kell elég�
 - ui_SMM.py
 
 **Osztály(ok)**:  
-- App
 - PetSMM
