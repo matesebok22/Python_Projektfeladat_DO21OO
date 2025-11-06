@@ -7,6 +7,7 @@ A feladat témája egy virtuális állat gondozása. Az állatnak ki kell elég�
 **Modulok és a modulokban használt függvények**:  
 - pet_SMM.py
 - storage_SMM.py
-  - asd
+  - save_result_SMM(day, score)
+  - load_best_result_SMM()
 
 **Osztály(ok)**:  
