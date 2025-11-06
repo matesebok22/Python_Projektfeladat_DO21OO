@@ -1,5 +1,5 @@
 from tkinter import Tk
-from ui import App
+from ui_SMM import App
 
 def main():
     root = Tk()
