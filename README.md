@@ -9,5 +9,6 @@ A feladat témája egy virtuális állat gondozása. Az állatnak ki kell elég�
 - storage_SMM.py
   - save_result_SMM(day, score)
   - load_best_result_SMM()
+- ui_SMM.py
 
 **Osztály(ok)**:  
